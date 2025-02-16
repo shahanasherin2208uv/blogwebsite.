@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: white;
+      color: #000000;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .navbar-nav .nav-link, .navbar-nav .btn {
+      color: #61dafb;
+    }
+    .header-section {
+      margin-top: 20px;
+      text-align: center;
+      padding: 50px 0;
+    }
+    .header-section h1 {
+      font-family: Courier New, monospace;
+      color: #3864b5;
+    }
+    .header-section h3 {
+      font-family: Bradley Hand, cursive;
+      color: #c0e0c3;
+    }
+    .header-section .btn {
+      background-color: #ff4081;
+      border: none;
+      color: #ffffff;
+    }
+    .search-bar {
+      margin-bottom: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .search-bar input {
+      width: 50%;
+      padding-left: 30px;
+      border: 2px solid #000000;
+    }
+    .search-bar .search-icon {
+      position: absolute;
+      left: 25%;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #000000;
+    }
+    .category-bar {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .category-bar a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      border-radius: 5px;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .category-bar .crafts {
+      background-color: #ffff00;
+    }
+    .category-bar .decor-diy {
+      background-color: #40e0d0;
+    }
+    .category-bar .advice {
+      background-color: #ffa500;
+    }
+    .category-bar .style {
+      background-color: #ff69b4;
+    }
+    .category-bar .holiday {
+      background-color: #90ee90;
+    }
+    .category-bar .recipes {
+      background-color: #808000;
+    }
+    .dark-mode-toggle {
+      margin-top: 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    .dark-mode-toggle input {
+      margin-left: 10px;
+    }
+    .dark-mode {
+      background-color: #333333;
+      color: #ffffff;
+    }
+    .subscription-form {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .subscription-form h4 {
+      font-family: Courier New, monospace;
+      color: #3864b5;
+    }
+    .subscription-form input {
+      width: 50%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .subscription-form button {
+      background-color: #000000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+  </style>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Brand Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign In</a>
+        </li>
+        <li class="nav-item">
+          <button class="btn btn-outline-primary">Subscribe</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="header-section">
+      <h1><b>Welcome to Our Blog</b></h1>
+      <h3>Discover Inspiring Stories and Ideas</h3>
+    </div>
+    <div class="search-bar">
+      <i class="search-icon fas fa-search"></i>
+      <input type="text" class="form-control" placeholder="Search for blog posts...">
+    </div>
+    <div class="category-bar">
+      <a href="#" class="crafts">CRAFTS</a>
+      <a href="#" class="decor-diy">DECOR & DIY</a>
+      <a href="#" class="advice">ADVICE</a>
+      <a href="#" class="style">STYLE</a>
+      <a href="#" class="holiday">HOLIDAY</a>
+      <a href="#" class="recipes">RECIPES</a>
+    </div>
+    <div class="dark-mode-toggle">
+      <label for="darkModeToggle">Dark Mode</label>
+      <input type="checkbox" id="darkModeToggle" onclick="toggleDarkMode()">
+    </div>
+    <div class="subscription-form">
+      
+      <p>Sign up with your email address to receive blog posts in your inbox.</p>
+      <input type="email" placeholder="Email Address">
+      <button>SIGN UP</button>
+    </div>
+  </div>
+  <script src="https://code
